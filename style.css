@@ -1,0 +1,1475 @@
+@import url("https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Xanh+Mono&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* navbar container */
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-bottom: 30px;
+  margin: 30px 30px;
+  border-bottom: 1px solid gray;
+  max-width: 100%;
+}
+
+.sideMenu {
+  grid-column: span 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.container h1 {
+  font-size: 3rem;
+  font-family: "Playfair Display", serif;
+  cursor: pointer;
+}
+
+.container ul li,
+a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  line-height: 1.5em;
+  font-size: 0.9em;
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+
+.container ul li:hover {
+  text-decoration: underline;
+  color: blue;
+  transition: 0.1s;
+  transform: scale(1.1);
+}
+.container a:hover {
+  text-decoration: underline;
+  color: blue;
+  transition: 0.1s;
+}
+
+.s-card {
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Poppins", sans-serif;
+  margin-right: 30%;
+  cursor: pointer;
+}
+
+.s-card img {
+  width: 100%;
+  margin-right: 1em;
+}
+.s-card .s-cardTest h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5em;
+}
+.s-card .s-cardTest p {
+  color: gray;
+  font-size: 0.9em;
+  margin-bottom: 0.5em;
+}
+
+.s-card .s-cardTest {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu {
+  justify-self: end;
+}
+
+.menu ul {
+  margin-bottom: 30px;
+}
+.menu li {
+  list-style: none;
+  font-size: 0.9em;
+}
+
+.handbugermenu {
+  width: 30px;
+  height: 30px;
+  display: none;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.active .handbugermenu{
+  position: fixed;
+  top: 40px;
+  right: 10%;
+  z-index: 999999;
+}
+
+.handbugermenu .line {
+  height: 2px;
+  width: 100%;
+  background-color: black;
+  transition: 0.4s;
+}
+
+.active .handbugermenu .line1 {
+  transform: rotateZ(-45deg) translate(-8px, 6px);
+}
+.active .handbugermenu .line2 {
+  opacity: 0;
+}
+.active .handbugermenu .line3 {
+  transform: rotateZ(45deg) translate(-8px, -6px);
+}
+
+/* navbar end here */
+
+/* main section start here */
+
+section h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  text-align: center;
+  font-size: 9rem;
+  max-width: 90%;
+  margin: auto;
+}
+
+.mainimge {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  width: 90%;
+  margin: auto;
+}
+
+.imagecard img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.cardtext {
+  font-family: "Poppins", sans-serif;
+}
+
+.cardtext .tags {
+  display: flex;
+  margin-bottom: 0.5em;
+}
+.cardtext .tags p {
+  margin-right: 1em;
+  font-size: 0.9em;
+  border: 1px solid gray;
+  padding: 0.1em 0.5em;
+  border-radius: 10px;
+}
+.cardtext h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  cursor: pointer;
+}
+.cardtext p {
+  font-size: 0.9em;
+}
+.cardtext p span {
+  color: gray;
+}
+
+/* main section end here */
+
+/* products section start here */
+
+.products {
+  width: 90%;
+  margin: auto;
+  margin-top: 10em;
+}
+
+.products .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+.products .top h2 {
+  font-size: 4rem;
+  font-family: "Poppins", "sans-serif";
+  font-weight: 300;
+}
+.products .top a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid gray;
+  padding: 0.3em 1em;
+  border-radius: 1em;
+}
+
+.productcard a {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid gray;
+  padding: 0.3em 1em;
+  border-radius: 1em;
+}
+
+.products .productcard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.p-card img {
+  width: 100%;
+  overflow: hidden;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+.p-card {
+  font-family: "Poppins", sans-serif;
+  padding: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.p-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 1px 12px 0px rgb(0 0 0 / 50%);
+  transition: 0.3s ease-in-out;
+}
+.p-card h5 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.p-card p {
+  font-size: 0.9rem;
+}
+
+/* products section end here */
+
+/* horoscopes section start here */
+
+.horoscopes {
+  background-image: url(images/meg-wagener-AkiY2Wjk53k-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 3rem;
+  padding: 5rem 0rem;
+}
+
+.horoscopes ul {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300%;
+  overflow-x: hidden;
+  animation: side 20s linear infinite;
+  position: relative;
+}
+.horoscopes ul:hover {
+  animation-play-state: paused;
+}
+
+@keyframes side {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+.horoscopes ul li img {
+  width: 40px;
+  margin-right: 0.9em;
+  background-color: white;
+  padding: 0.5em;
+  border-radius: 50%;
+}
+.horoscopes ul li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  color: white;
+  border: 1px solid white;
+  padding: 0.5em 1em;
+  border-radius: 2em;
+  cursor: pointer;
+}
+.horoscopes h2 {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 4rem;
+  font-family: "Poppins", "sans-serif";
+  font-weight: 300;
+  margin-left: 1em;
+  margin-bottom: 0.5em;
+}
+
+/* horoscopes section end here */
+
+/* newsfeed section start here */
+
+.newsfeed {
+  width: 90%;
+  margin: auto;
+  margin-top: 10em;
+  font-family: "Poppins", "sans-serif";
+}
+
+.newsfeed .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+.newsfeed .top h2 {
+  font-size: 4rem;
+  font-weight: 300;
+}
+.newsfeed .top a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid gray;
+  padding: 0.3em 1em;
+  border-radius: 1em;
+}
+.newsfeed a {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid gray;
+  padding: 0.3em 1em;
+  border-radius: 1em;
+}
+
+.newsbox {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 3rem;
+}
+
+.newsbox .fetured {
+  grid-column: span 2;
+  height: 500px;
+}
+
+.newsbox .fetured img {
+  width: 100%;
+  height: 482px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.textbox {
+  height: 444px;
+  width: 351px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  top: -468px;
+  padding: 1em;
+  left: 21px;
+  border-radius: 5px;
+}
+
+.textbox .tags {
+  display: flex;
+  margin-bottom: 0.5em;
+}
+.textbox .head h3 {
+  font-size: 2rem;
+  font-weight: 100;
+}
+.textbox .tags p {
+  margin-right: 1em;
+  font-size: 0.9em;
+  border: 1px solid gray;
+  padding: 0.1em 0.5em;
+  border-radius: 10px;
+}
+
+.textbox p {
+  font-size: 0.9em;
+}
+.textbox p span {
+  color: gray;
+}
+
+.side {
+  padding: 0 1em;
+}
+
+.sidecard {
+  padding-top: 0.5em;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.5em;
+  border-bottom: 2px solid rgb(223, 221, 221);
+  cursor: pointer;
+}
+.sidecard img {
+  width: 120px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 1em;
+  border-radius: 5px;
+}
+.sidecard .tags {
+  display: flex;
+  margin-bottom: 0.5em;
+}
+
+.sidecard .tags p {
+  margin-right: 1em;
+  font-size: 0.9em;
+  border: 1px solid gray;
+  padding: 0.1em 0.5em;
+  border-radius: 10px;
+}
+
+.sidecard .sbox h6 {
+  font-size: 0.8rem;
+}
+
+.sidecard .sbox p {
+  margin-top: 1em;
+  font-size: 0.6em;
+}
+.sidecard .sbox p span {
+  color: gray;
+}
+
+/* newsfeed section end here */
+
+/* fashionsweek section start here */
+
+.fashionsweek {
+  margin: auto;
+  margin-top: 10em;
+  font-family: "Poppins", "sans-serif";
+}
+
+.fashionsweek .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1em;
+  width: 90%;
+  margin: auto;
+}
+.fashionsweek .top h2 {
+  font-size: 4rem;
+  font-weight: 300;
+}
+.fashionsweek .top a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid gray;
+  padding: 0.3em 1em;
+  border-radius: 1em;
+}
+.fashionsweek a {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid gray;
+  padding: 0.3em 1em;
+  border-radius: 1em;
+}
+.fashioncard {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 37%;
+  gap: 30px;
+  padding-left: 1em;
+  overflow-x: auto;
+  margin-top: 2em;
+}
+
+.fashioncard::-webkit-scrollbar {
+  width: 5px;
+}
+
+.fashioncard .fcard {
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+.fashioncard img {
+  width: 100%;
+  aspect-ratio: 16/10;
+  object-fit: cover;
+  margin-right: 1em;
+  border-radius: 5px;
+  scroll-snap-align: mandatory inline;
+}
+.fashioncard .tags {
+  display: flex;
+  margin-bottom: 0.5em;
+}
+
+.fashioncard .tags p {
+  margin-right: 1em;
+  font-size: 0.9em;
+  border: 1px solid gray;
+  padding: 0.1em 0.5em;
+  border-radius: 10px;
+}
+
+.fashioncard .sbox h6 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.fashioncard .sbox p {
+  margin-top: 0.5em;
+  font-size: 0.8em;
+}
+.fashioncard .sbox p span {
+  color: gray;
+}
+
+/* fashionsweek section end here */
+
+/* fashionshoot section start here */
+
+.fashionshoot {
+  margin: auto;
+  margin-top: 10em;
+  font-family: "Poppins", "sans-serif";
+  margin-bottom: 10em;
+  background-color: #161616;
+  color: white;
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+.fashionshoot .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 90%;
+  margin: auto;
+  margin-bottom: 2em;
+}
+.fashionshoot .top h2 {
+  font-size: 4rem;
+  font-weight: 300;
+  cursor: pointer;
+}
+.fashionshoot .top a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid gray;
+  padding: 0.3em 1em;
+  border-radius: 1em;
+  color: white;
+}
+
+.fashionShootConatiner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 90%;
+  margin: auto;
+  gap: 30px;
+}
+.fashionShootConatiner img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 11/12;
+  border-radius: 5px;
+  box-shadow: 9px 4px 18px rgba(0, 0, 0, 0.5);
+}
+.fashionShootConatiner img:hover {
+  transform: scale(1.1);
+  transition: 0.2s ease-in-out;
+}
+
+.fashionShootConatiner .tags {
+  display: flex;
+  margin-bottom: 0.5em;
+}
+
+.fashionShootConatiner .tags p {
+  margin-right: 1em;
+  font-size: 0.9em;
+  border: 1px solid gray;
+  padding: 0.1em 0.5em;
+  border-radius: 10px;
+}
+
+.fashionShootConatiner .sbox h6 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+
+.fashionShootConatiner .sbox p {
+  margin-top: 0.5em;
+  font-size: 0.8em;
+}
+.fashionShootConatiner .sbox p span {
+  color: gray;
+}
+
+.fashionShootConatiner .sbox .a {
+  margin-top: 2em;
+}
+
+.fashionShootConatiner .sbox a {
+  background-color: white;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+}
+
+.fashionshoot .more {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid gray;
+  padding: 0.3em 1em;
+  border-radius: 1em;
+  color: white;
+}
+
+/* fashionshoot section end here */
+
+/* magazines section start here */
+
+.magazines {
+  margin: auto;
+  margin-top: 10em;
+  font-family: "Poppins", "sans-serif";
+  margin-bottom: 5em;
+}
+.magazines .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 90%;
+  margin: auto;
+  margin-bottom: 2em;
+}
+.magazines .top h2 {
+  font-size: 4rem;
+  font-weight: 300;
+}
+.magazines .top a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid gray;
+  padding: 0.3em 1em;
+  border-radius: 1em;
+}
+.magazines a {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid gray;
+  padding: 0.3em 1em;
+  border-radius: 1em;
+}
+
+.magazinescard {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.magazinescard img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.mcard {
+  padding: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.mcard h5 {
+  font-size: 1.1rem;
+}
+.mcard p {
+  font-size: 0.9rem;
+}
+
+.mcard:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 1px 12px 0px rgb(0 0 0 / 50%);
+  transition: 0.3s ease-in-out;
+}
+
+/* magazines section end here */
+
+/* subscribe section start here */
+
+.subscribe {
+  font-size: 6rem;
+  font-family: "Poppins", "sans-serif";
+}
+
+.subscribe h3.s1 {
+  font-weight: 100;
+  position: relative;
+  animation: scroll 20s linear infinite;
+  overflow-x: hidden;
+  width: 200%;
+  transition: 1s ease-in-out;
+}
+
+@keyframes scroll {
+  0% {
+    right: 0%;
+  }
+  100% {
+    right: -100%;
+  }
+}
+.subscribe h3.s2 {
+  font-weight: 100;
+  position: relative;
+  animation: scroll2 20s linear infinite;
+  overflow-x: hidden;
+  width: 200%;
+  transition: 1s ease-in-out;
+}
+
+@keyframes scroll2 {
+  0% {
+    left: -0%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+/* subscribe section end here */
+
+/* mailcollection section start here */
+
+.mailcollection {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  justify-content: space-between;
+  margin-bottom: 2em;
+  margin-top: 5em;
+}
+
+.mailcollection h4 {
+  max-width: 20%;
+  font-family: "Poppins", "sans-serif";
+  font-weight: 400;
+}
+.mailcollection input[type="text"] {
+  max-width: 50%;
+  font-family: "Poppins", "sans-serif";
+  font-weight: 400;
+  width: 800px;
+  border: 2px solid gray;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  font-size: 1.2rem;
+  padding: 0.5em 1em;
+}
+.mailcollection input[type="submit"] {
+  max-width: 20%;
+  height: 50px;
+  font-family: "Poppins", "sans-serif";
+  font-weight: 400;
+  width: 800px;
+  background-color: #161616;
+  color: white;
+  font-size: 1.1rem;
+  border-radius: 2em;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+
+/* mailcollection section end  here */
+
+/* footer section start  here */
+
+footer {
+  margin: auto;
+  margin-top: 5em;
+  font-family: "Poppins", "sans-serif";
+  background-color: #161616;
+  color: white;
+  padding-top: 5em;
+}
+footer .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 2em;
+}
+footer .top h2 {
+  font-size: 4rem;
+  font-weight: 300;
+  font-family: "Playfair Display", serif;
+  cursor: pointer;
+}
+footer .top a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #524d4d;
+  padding: 0.3em 1em;
+  border-radius: 2em;
+  color: white;
+}
+
+footer a {
+  color: white;
+}
+footer li {
+  list-style: none;
+}
+
+footer h6 {
+  font-size: 1.1rem;
+  margin-bottom: 1em;
+}
+footer {
+  font-size: 0.9rem;
+}
+
+.footerMenu {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: auto;
+  width: 90%;
+  margin-bottom: 2em;
+}
+
+.b-s-card {
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+
+.b-s-card img {
+  width: 100%;
+  margin-right: 1em;
+}
+.b-s-card .s-cardTest h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5em;
+}
+.b-s-card .s-cardTest p {
+  color: gray;
+  font-size: 0.9em;
+  margin-bottom: 0.5em;
+}
+
+.b-s-card .s-cardTest {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+footer .socia {
+  text-align: right;
+}
+
+.copyrights {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: auto;
+  width: 90%;
+  text-align: center;
+}
+
+.black {
+  background-color: black;
+  padding: 2em 0;
+}
+
+/* footer section end  here */
+
+@media screen and (max-width: 1400px) {
+  section h1 {
+    font-size: 6rem;
+  }
+  .newsbox {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .fashionShootConatiner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    margin: auto;
+    gap: 30px;
+  }
+  .fashionShootConatiner .sbox {
+    grid-column: span 3;
+    text-align: center;
+  }
+  .fashionShootConatiner .tags {
+    display: flex;
+    padding-left: 14em;
+    margin-bottom: 0.5em;
+  }
+}
+@media screen and (max-width: 1260px) {
+  section h1 {
+    font-size: 6rem;
+  }
+  .newsbox {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .mainimge {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    width: 90%;
+    margin: auto;
+  }
+
+  .imagecard.trd {
+    grid-column: span 2;
+  }
+
+  .horoscopes ul {
+    width: 400%;
+    overflow-x: hidden;
+    animation: side 10s linear infinite;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .sideMenu {
+    display: none;
+  }
+
+  .handbugermenu {
+    display: flex;
+  }
+
+  section h1 {
+    font-size: 4rem;
+  }
+  .products {
+    margin-top: 5em;
+  }
+  .products .top h2 {
+    font-size: 3rem;
+  }
+  .products .top a {
+    padding: 0.2em 0.3em;
+  }
+  .products .productcard {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .horoscopes h2 {
+    font-size: 3rem;
+  }
+
+  .horoscopes ul {
+    width: 500%;
+    overflow-x: hidden;
+    animation: side 8s linear infinite;
+  }
+  .newsfeed {
+    margin-top: 5em;
+  }
+  .newsfeed .top h2 {
+    font-size: 3rem;
+  }
+  .newsfeed .top a {
+    padding: 0.2em 0.3em;
+  }
+  .newsbox {
+    display: grid;
+  }
+
+  .newsbox .fetured {
+    grid-column: span 3;
+    height: 500px;
+  }
+
+  .side {
+    padding: 0 1em;
+    grid-row: 2;
+    grid-column: span 3;
+  }
+
+  .sidecard {
+    justify-content: space-around;
+  }
+  .fashionsweek {
+    margin-top: 5em;
+  }
+  .fashionsweek .top h2 {
+    font-size: 3rem;
+  }
+  .fashionsweek .top a {
+    padding: 0.2em 0.3em;
+  }
+  .fashioncard {
+    grid-auto-columns: 60%;
+  }
+  .fashionshoot {
+    margin-top: 5em;
+  }
+  .fashionshoot .top h2 {
+    font-size: 3rem;
+  }
+  .fashionshoot .top a {
+    padding: 0.2em 0.3em;
+  }
+  .magazines {
+    margin-top: 5em;
+  }
+  .magazines .top h2 {
+    font-size: 3rem;
+  }
+  .magazines .top a {
+    padding: 0.2em 0.3em;
+  }
+  .magazinescard {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .subscribe {
+    font-size: 5rem;
+    font-family: "Poppins", "sans-serif";
+  }
+  .mailcollection {
+    flex-direction: column;
+    text-align: center;
+  }
+  .mailcollection h4 {
+    max-width: 80%;
+  }
+
+  .mailcollection input[type="text"] {
+    max-width: 70%;
+    margin: 1em 1em;
+  }
+  .mailcollection input[type="submit"] {
+    max-width: 50%;
+  }
+  footer .top h2 {
+    font-size: 3rem;
+  }
+  footer .top a {
+    padding: 0.2em 0.3em;
+  }
+
+  .footerMenu {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+
+  footer .b-scarddiv {
+    margin-top: 2em;
+    position: relative;
+    left: -1em;
+  }
+  footer .socia {
+    text-align: left;
+    margin-top: 2em;
+  }
+
+  .copyrights {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sideMenu {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    top: 0%;
+    height: 100vh;
+    transition: 0.5s;
+    background-color: white;
+    width: 100%;
+    padding: 2em 1em;
+    right: -200%;
+    z-index: 99999;
+  }
+
+  .active .sideMenu {
+    right: 0%;
+  }
+
+  .active .s-card {
+    margin: 3em 0;
+  }
+
+  .active .s-card .s-cardTest p {
+    color: gray;
+    font-size: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .active .s-card .s-cardTest h4 {
+    font-size: 1rem;
+    margin-bottom: 0.5em;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  section h1 {
+    font-size: 4rem;
+  }
+
+  .imagecard {
+    grid-column: span 2;
+  }
+
+  .products .top h2 {
+    font-size: 2rem;
+  }
+  .newsfeed .top h2 {
+    font-size: 2rem;
+  }
+  .horoscopes h2 {
+    font-size: 2rem;
+  }
+  .horoscopes ul {
+    width: 200%;
+    overflow-x: hidden;
+    animation: side 15s linear infinite;
+  }
+  .fashionsweek .top h2 {
+    font-size: 2rem;
+  }
+  .fashionshoot .top h2 {
+    font-size: 2rem;
+  }
+  .fashionShootConatiner {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .fashionShootConatiner .sbox {
+    grid-column: span 1;
+    text-align: left;
+  }
+  .fashionShootConatiner .tags {
+    padding-left: 1em;
+  }
+  .magazines .top h2 {
+    font-size: 2rem;
+  }
+  .subscribe {
+    font-size: 4rem;
+    font-family: "Poppins", "sans-serif";
+  }
+  .mailcollection h4 {
+    max-width: 90%;
+  }
+
+  .mailcollection input[type="text"] {
+    max-width: 80%;
+    margin: 1em 1em;
+  }
+  .mailcollection input[type="submit"] {
+    max-width: 60%;
+  }
+  footer .top h2 {
+    font-size: 2rem;
+  }
+  footer h6 {
+    font-size: 1rem;
+  }
+
+  .container ul li,
+  a {
+    font-size: 0.8em;
+  }
+  .b-s-card {
+    width: 90px;
+  }
+
+  .b-s-card .s-cardTest h4 {
+    font-size: 1rem;
+    margin-bottom: 0.5em;
+  }
+  .b-s-card .s-cardTest p {
+    font-size: 0.8em;
+  }
+  .b-s-card .s-cardTest span {
+    font-size: 0.8em;
+  }
+  footer .socia {
+    grid-row: 3;
+    position: relative;
+    left: -1em;
+  }
+}
+@media screen and (max-width: 500px) {
+  .products .productcard {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .productcard a {
+    display: flex;
+  }
+  .products .top a {
+    display: none;
+  }
+  .newsfeed a {
+    display: flex;
+  }
+  .newsfeed .top a {
+    display: none;
+  }
+
+  .horoscopes ul {
+    width: 200%;
+    font-size: 0.5em;
+    overflow-x: hidden;
+    animation: side 10s linear infinite;
+  }
+  .horoscopes ul li img {
+    width: 21px;
+    margin-right: 0.9em;
+    background-color: white;
+    padding: 0.5em;
+    border-radius: 50%;
+  }
+  .sidecard.ft {
+    border: none;
+    margin-bottom: 1em;
+  }
+  .textbox {
+    width: 90%;
+  }
+
+  .fashionsweekeed a {
+    display: flex;
+  }
+  .fashionsweek .top a {
+    display: none;
+  }
+  .fashioncard .sbox p {
+    font-size: 0.6em;
+  }
+  .fashioncard .sbox h6 {
+    font-size: 1rem;
+  }
+
+  .fashionshoot .more {
+    display: flex;
+  }
+  .fashionshoot .top a {
+    display: none;
+  }
+  .fashionShootConatiner .sbox p {
+    font-size: 0.6em;
+  }
+  .fashionShootConatiner .sbox h6 {
+    font-size: 1rem;
+  }
+  .fashionShootConatiner .sbox a {
+    padding: 0.5em 1em;
+    font-size: 0.6rem;
+  }
+  .fashionShootConatiner {
+    grid-template-columns: 1fr;
+  }
+
+  .fashionShootConatiner .sbox {
+    grid-column: span 1;
+    text-align: left;
+  }
+  .fashionShootConatiner .tags {
+    display: flex;
+    padding-left: 0em;
+    margin-bottom: 0.5em;
+  }
+  .fashionshoot .more {
+    width: 90%;
+    margin: auto;
+    margin-top: 2em;
+  }
+
+  .mcard h5 {
+    font-size: 1rem;
+  }
+  .mcard p {
+    font-size: 0.8rem;
+  }
+  .magazines a {
+    display: flex;
+    margin: auto;
+    margin-top: 2em;
+    width: 80%;
+  }
+  .magazines .top a {
+    display: none;
+  }
+  .subscribe {
+    font-size: 3rem;
+    font-family: "Poppins", "sans-serif";
+  }
+  .mailcollection h4 {
+    max-width: 90%;
+  }
+
+  .mailcollection input[type="text"] {
+    max-width: 90%;
+    margin: 1em 1em;
+  }
+  .mailcollection input[type="submit"] {
+    max-width: 70%;
+  }
+  footer .three {
+    display: none;
+  }
+  footer .fou {
+    display: none;
+  }
+}
+@media screen and (max-width: 415px) {
+  .newsbox .tags p {
+    font-size: 0.6em;
+  }
+
+  .newsbox h2 {
+    font-size: 1.1rem;
+  }
+  .newsbox p {
+    font-size: 0.8em;
+  }
+  .fashioncard .sbox p {
+    font-size: 0.5em;
+  }
+  .fashioncard .sbox h6 {
+    font-size: 0.9rem;
+  }
+  .magazinescard {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .subscribe {
+    font-size: 2rem;
+    font-family: "Poppins", "sans-serif";
+  }
+  .mailcollection h4 {
+    max-width: 90%;
+  }
+
+  .mailcollection input[type="text"] {
+    max-width: 90%;
+    margin: 1em 1em;
+  }
+  .mailcollection input[type="submit"] {
+    max-width: 90%;
+  }
+
+  .copyrights {
+    display: block;
+  }
+  footer .one {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .container h1 {
+    font-size: 2rem;
+  }
+
+  section h1 {
+    font-size: 2rem;
+  }
+
+  .imagecard {
+    grid-column: span 2;
+  }
+
+  .cardtext .tags p {
+    font-size: 0.6em;
+  }
+
+  .cardtext h2 {
+    font-size: 1.1rem;
+  }
+  .cardtext p {
+    font-size: 0.8em;
+  }
+  .sidecard img {
+    width: 83px;
+    height: 97px;
+  }
+  .textbox .head h3 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 270px) {
+  footer .b-scarddiv {
+    display: none;
+  }
+  footer .socia {
+    grid-row: 3;
+    position: relative;
+    left: 0em;
+  }
+}
